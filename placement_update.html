@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placement Update</title>
+  <link rel="stylesheet" href="placement_update.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <h1 class="page-title">Placement Update</h1>
+
+    <!-- Job Openings Table -->
+    <section class="section">
+      <h3>Job Openings</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Company ID</th>
+            <th>Company Name</th>
+            <th>Job Title</th>
+            <th>Eligibility</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="job-openings-body">
+          <!-- Dynamic rows will be inserted here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Past Applications Table -->
+    <section class="section">
+      <h3>Past Applications</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Company ID</th>
+            <th>Company Name</th>
+            <th>Job Title</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="past-applications-body">
+          <!-- Dynamic rows will be inserted here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Industry Applied Section -->
+    <section class="section">
+      <h3>Industry Applied</h3>
+      <canvas id="industry-chart"></canvas>
+    </section>
+
+    <!-- Analysis Section -->
+    <section class="section">
+      <h3>Application Analysis</h3>
+      <canvas id="analysis-chart"></canvas>
+    </section>
+
+    <!-- Buttons 
+    <div class="buttons-container">
+      <button id="update-btn" class="btn">Update</button>
+    </div>
+  -->
+
+  </div>
+
+  <script src="placement_update.js"></script>
+</body>
+</html>

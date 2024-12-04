@@ -1,0 +1,141 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page-title {
+    text-align: center;
+    color: #007bff;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Student Details Section */
+  .student-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .student-photo {
+    flex: 1;
+    margin-right: 30px;
+  }
+  
+  .photo-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .student-info {
+    flex: 3;
+  }
+  
+  .student-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .student-info input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 14px;
+  }
+  
+  /* Sections */
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Editable List Styles */
+  .editable-list {
+    list-style-type: none;
+  }
+  
+  .list-item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .editable-list input {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Buttons Container */
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-update {
+    background-color: #28a745;
+  }
+  
+  .btn-update:hover {
+    background-color: #218838;
+  }
+  
