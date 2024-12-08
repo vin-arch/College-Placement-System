@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Representative Dashboard</title>
+    <link rel="stylesheet" href="company_representative.css">
+</head>
+<body>
+    <header>
+        <h1>Company Representative Dashboard</h1>
+    </header>
+
+    <section id="application-status">
+        <h2>Application Status</h2>
+        <p>Status: <span id="status">Pending</span></p>
+    </section>
+
+    <section id="eligibility-criteria" class="hidden">
+        <h2>Set Eligibility Criteria</h2>
+        <form id="criteria-form">
+            <label for="min-cgpa">Minimum CGPA:</label>
+            <input type="number" id="min-cgpa" name="min-cgpa" step="0.01" required>
+            <br>
+            <label for="skills">Skills Required:</label>
+            <input type="text" id="skills" name="skills" required>
+            <br>
+            <button type="button" id="save-criteria">Save</button>
+            <button type="button" id="send-application">Send to Students</button>
+        </form>
+    </section>
+
+    <section id="student-applications" class="hidden">
+        <h2>Student Applications</h2>
+        <label for="filter-marks">Filter by Marks (Round 1):</label>
+        <input type="number" id="filter-marks" name="filter-marks">
+        <label for="filter-cgpa">Filter by CGPA:</label>
+        <input type="number" id="filter-cgpa" name="filter-cgpa" step="0.01">
+        <button id="apply-filters">Apply Filters</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>CGPA</th>
+                    <th>Resume</th>
+                    <th>Marks in Round 1</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="applications-table">
+                <!-- Rows dynamically generated -->
+            </tbody>
+        </table>
+        <button id="update-marks">Update Marks</button>
+    </section>
+
+    <section id="accepted-students" class="hidden">
+        <h2>Accepted Students</h2>
+        <ul id="accepted-list">
+            <!-- List dynamically generated -->
+        </ul>
+        <button id="print-list">Print List</button>
+    </section>
+
+    <script src="company_representative.js"></script>
+</body>
+</html>
