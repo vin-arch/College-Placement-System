@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Coordinator Page</title>
+    <link rel="stylesheet" href="placement-coordinator.css">
+</head>
+<body>
+    <header>
+        <h1>Placement Coordinator Dashboard</h1>
+        <div class="coordinator-info">
+            <img src="teacher-photo.jpg" alt="Teacher Photo" class="teacher-photo">
+            <div class="teacher-details">
+                <h2>Teacher Name</h2>
+                <p>Department: Computer Science</p>
+                <p>Phone: +1234567890</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="upcoming-drives">
+            <h2>Upcoming Drives</h2>
+            <table id="upcoming-drives-table">
+                <thead>
+                    <tr>
+                        <th>Company ID</th>
+                        <th>Company Name</th>
+                        <th>Job Profile</th>
+                        <th>Company Detail</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="placement-statistics">
+            <h2>Placement Statistics</h2>
+            <table id="placement-statistics-table">
+                <thead>
+                    <tr>
+                        <th>Company ID</th>
+                        <th>Company Name</th>
+                        <th>Job Profile</th>
+                        <th>Students Participated</th>
+                        <th>Students Selected for Interview</th>
+                        <th>Students Placed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="placement-summary">
+            <h2>Placement Summary</h2>
+            <p>Summary details go here...</p>
+        </section>
+
+        <section class="send-notification">
+            <h2>Send Notification</h2>
+            <textarea id="notification-text" placeholder="Type your notification here..."></textarea>
+            <button id="send-notification-btn">Send Notification</button>
+        </section>
+
+        <div class="actions">
+            <button id="manage-companies-btn">Manage Companies</button>
+        </div>
+    </main>
+
+    <script src="placement-coordinator.js"></script>
+</body>
+</html>
